@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 'use strict';
 function shoppingCart(){
-  $('#js-shopping-list-form').on('click', function(event){
+  $('#js-shopping-list-form').on('submit', function(event){
     event.preventDefault();
     let newItem = $('#shopping-list-entry').val();
     $('ul').append(`<li>
